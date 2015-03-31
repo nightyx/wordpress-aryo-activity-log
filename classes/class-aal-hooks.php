@@ -20,6 +20,7 @@ class AAL_Hooks {
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-widgets.php' );
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-core.php' );
         include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-buddypress.php');
+        include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-bbpress.php');
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-export.php' );
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-comments.php' );
 
@@ -34,6 +35,7 @@ class AAL_Hooks {
 		new AAL_Hook_Widgets();
 		new AAL_Hook_Core();
         new AAL_Hook_BuddyPress();
+        new AAL_Hook_BBPress();
 		new AAL_Hook_Export();
 		new AAL_Hook_Comments();
 	}

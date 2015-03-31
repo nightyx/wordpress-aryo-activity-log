@@ -78,7 +78,7 @@ class AAL_Activity_Log_List_Table extends WP_List_Table {
 			'aal_init_roles',
 			array(
 				// admin
-				'manage_options' => array( 'Core', 'Export', 'Post', 'Taxonomy', 'User', 'Options', 'Attachment', 'Plugin', 'Widget', 'Theme', 'Menu', 'Comments', 'BuddyPress' ),
+				'manage_options' => array( 'Core', 'Export', 'Post', 'Taxonomy', 'User', 'Options', 'Attachment', 'Plugin', 'Widget', 'Theme', 'Menu', 'Comments', 'BuddyPress', 'BBPress' ),
 				// editor
 				'edit_pages'     => array( 'Post', 'Taxonomy', 'Attachment', 'Comments' ),
 			)
@@ -87,7 +87,7 @@ class AAL_Activity_Log_List_Table extends WP_List_Table {
 		$this->_caps = apply_filters(
 			'aal_init_caps',
 			array(
-				'administrator' => array( 'administrator', 'editor', 'author', 'guest' ), //TODO: add subscriber
+				'administrator' => array( 'administrator', 'editor', 'author', 'guest'), //TODO: add subscriber
 				'editor'        => array( 'editor', 'author', 'guest' ),
 				'author'        => array( 'author', 'guest' ),
 			)
