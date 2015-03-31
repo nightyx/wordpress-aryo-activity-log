@@ -70,6 +70,7 @@ class AAL_Notifications {
 			'Theme',
 			'User',
 			'Widget',
+            'BuddyPress',
 		);
 		return array_combine( $opts, $opts );
 	}

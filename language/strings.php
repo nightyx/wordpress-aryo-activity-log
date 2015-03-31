@@ -5,9 +5,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 __( 'ARYO Activity Log', 'aryo-aal' );
 __( 'Get aware of any activities that are taking place on your dashboard! Imagine it like a black-box for your WordPress site. e.g. post was deleted, plugin was activated, user logged in or logged out - it\'s all these for you to see.', 'aryo-aal' );
 
-__( 'Administrator', 'aryo-aal' );
-__( 'Editor', 'aryo-aal' );
-
 // Post
 __( 'Post', 'aryo-aal' );
 __( 'created', 'aryo-aal' );
@@ -139,3 +136,6 @@ __( 'tag_base', 'aryo-aal' );
 // Export
 __( 'Export', 'aryo-aal' );
 __( 'downloaded', 'aryo-aal' );
+
+// BuddyPress
+__( 'BuddyPress','aryo-aal' );

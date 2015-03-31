@@ -11,7 +11,7 @@ class AAL_Hooks {
 		// Load all our hooks.
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-user.php' );
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-attachment.php' );
-		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-menu.php' );
+        include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-menu.php' );
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-options.php' );
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-plugins.php' );
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-posts.php' );
@@ -19,9 +19,10 @@ class AAL_Hooks {
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-theme.php' );
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-widgets.php' );
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-core.php' );
+        include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-buddypress.php');
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-export.php' );
 		include( plugin_dir_path( ACTIVITY_LOG__FILE__ ) . '/hooks/class-aal-hook-comments.php' );
-		
+
 		new AAL_Hook_User();
 		new AAL_Hook_Attachment();
 		new AAL_Hook_Menu();
@@ -32,6 +33,7 @@ class AAL_Hooks {
 		new AAL_Hook_Theme();
 		new AAL_Hook_Widgets();
 		new AAL_Hook_Core();
+        new AAL_Hook_BuddyPress();
 		new AAL_Hook_Export();
 		new AAL_Hook_Comments();
 	}
